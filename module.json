@@ -1,0 +1,18 @@
+{
+  "module": {
+    "name": "Rift.Renderer.SimpleRenderer",
+    "category": "Rendering",
+    "version": "0.1.1",
+    "author": "r0neko",
+    "description": "A simple renderer implementation for 2D/3D.",
+    "homepage": "https://github.com/SpectralRift/Rift.Renderer.SimpleRenderer",
+    "type": "monolithic",
+    "cmakeProject": "Rift_Renderer_SimpleRenderer"
+  },
+  "dependencies": [
+    "Rift.Core.Runtime"
+  ],
+  "supportedTargets": [
+    "all"
+  ]
+}
