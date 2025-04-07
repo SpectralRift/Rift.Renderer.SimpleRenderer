@@ -13,6 +13,8 @@ target_include_directories(
         PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/private"
 )
 
-target_link_libraries(Rift_Renderer_SimpleRenderer RiftEngine_Core_Runtime)
+rift_resolve_module_libs("Rift.Core.Runtime" RIFT_SIMPLE_RENDERER_DEPS)
+
+target_link_libraries(Rift_Renderer_SimpleRenderer ${RIFT_SIMPLE_RENDERER_DEPS})
 
 rift_bundle_folder(${CMAKE_CURRENT_SOURCE_DIR}/assets)
